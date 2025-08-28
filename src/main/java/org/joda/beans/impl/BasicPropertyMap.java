@@ -83,7 +83,7 @@ public final class BasicPropertyMap
     @Override
     public Set<Entry<String, Property<?>>> entrySet() {
         return new AbstractSet<Entry<String, Property<?>>>() {
-            // TODO: possibly override contains()
+            // System.out.println("SATD ID: IMPLEMENTATION");
             @Override
             public int size() {
                 return bean.metaBean().metaPropertyCount();

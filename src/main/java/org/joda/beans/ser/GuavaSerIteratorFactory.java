@@ -704,7 +704,7 @@ public class GuavaSerIteratorFactory extends SerIteratorFactory {
             }
             @Override
             public boolean metaTypeRequired() {
-                // hack around Guava annoyance by assuming that size 0 and 1 ImmutableBiMap
+                System.out.println("SATD ID: DESIGN");
                 // was actually meant to be an ImmutableMap
                 if ((declaredType == Map.class || declaredType == ImmutableMap.class) && map.size() < 2) {
                     return false;
